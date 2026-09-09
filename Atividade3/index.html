@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Favarin">
+    <meta name="description"
+        content="APIs e Integrações: Conceitos, tipos, ferramentas e exemplos. Artigo acadêmico de Desenvolvimento Web (DWEB) - FATEC Sorocaba.">
+    <meta name="keywords"
+        content="APIs, Web API, Web Service, REST, SOAP, GraphQL, gRPC, OpenAPI, Postman, Segurança de API, FATEC Sorocaba">
+    <link rel="stylesheet" href="./style.css">
+    <title>APIs e Integrações | Victor Favarin - FATEC Sorocaba</title>
+</head>
+
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">APIs e Integrações</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#introducao" class="nav-link">Introdução</a></li>
+                    <li class="nav-item"><a href="#conceitos" class="nav-link">Conceitos</a></li>
+                    <li class="nav-item"><a href="#tipos" class="nav-link">Tipos</a></li>
+                    <li class="nav-item"><a href="#arquiteturas" class="nav-link">Arquiteturas</a></li>
+                    <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#seguranca" class="nav-link">Segurança</a></li>
+                    <li class="nav-item"><a href="#exemplos" class="nav-link">Exemplos</a></li>
+                    <li class="nav-item"><a href="#referencias" class="nav-link">Referências</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">
+                    APIs e <br>
+                    <span class="home-title-color">Integrações</span><br>
+                    Conceitos, Tipos e Ferramentas
+                </h1>
+                <p class="about-text">
+                    <strong>Disciplina:</strong> Desenvolvimento Web (DWEB)<br>
+                    <strong>Aluno:</strong> Victor Favarin | <strong>Professora:</strong> Profª Denilce Veloso<br>
+                    <strong>Instituição:</strong> FATEC Sorocaba — 12 de Agosto de 2026
+                </p>
+                <br>
+                <a href="#introducao" class="button">Ler Artigo</a>
+            </div>
+            <div class="home-img">
+                <br><br>
+                <img src="./images/api.jpeg" width="400" height="400" alt="Imagem de apresentação do artigo"
+                    title="APIs e Integrações" />
+            </div>
+        </section>
+
+
+        <section class="about section" id="introducao">
+            <h2 class="section-title">1. Introdução</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <p class="about-text">
+                        As <strong>Application Programming Interfaces (APIs)</strong>, ou Interfaces de Programação de
+                        Aplicativos, são mecanismos fundamentais para a integração entre sistemas de software. Em termos
+                        gerais, uma API define uma forma organizada para que um programa utilize funcionalidades ou
+                        dados oferecidos por outro programa, reduzindo a necessidade de conhecer os detalhes internos de
+                        sua implementação. No contexto Web, as APIs frequentemente utilizam HTTP e permitem que
+                        front-ends, aplicações móveis, serviços de terceiros e outros sistemas troquem informações.
+                    </p>
+                    <br>
+                    <p class="about-text">
+                        O tema é especialmente relevante no desenvolvimento Web contemporâneo porque aplicações podem
+                        ser compostas por diferentes serviços, bancos de dados, aplicações móveis e microserviços. O
+                        próprio material da disciplina apresenta API, Web API e Web Service como conceitos relacionados,
+                        mas distintos, e destaca que endpoints são pontos de acesso a funcionalidades de uma API. Também
+                        ressalta que uma API pode existir em um sistema monolítico ou em uma arquitetura de
+                        microserviços.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="conceitos">
+            <h2 class="section-title">2. Conceitos Fundamentais</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h3 class="skills-subtitle">2.1 O que é uma API?</h3>
+                    <p class="skills-text">
+                        API é uma interface que estabelece um conjunto de regras para que um software possa interagir
+                        com outro software. Ela funciona como um <strong>contrato de comunicação</strong>: o consumidor
+                        da API precisa conhecer a interface disponibilizada, mas não necessariamente precisa conhecer a
+                        implementação interna do serviço.
+                    </p>
+                    <p class="skills-text">
+                        Essa separação favorece o reaproveitamento de funcionalidades. Por exemplo, um sistema de
+                        comércio eletrônico pode utilizar uma API de pagamentos sem implementar internamente toda a
+                        infraestrutura necessária para processar uma transação. Da mesma maneira, um aplicativo pode
+                        consultar uma API de mapas ou de previsão do tempo para incorporar esses recursos à sua própria
+                        interface.
+                    </p>
+
+                    <br>
+                    <h3 class="skills-subtitle">2.2 API, Web API e Web Service</h3>
+                    <p class="skills-text">
+                        Os três termos não são sinônimos:
+                    </p>
+                    <br>
+                    <p class="skills-text"><strong>API</strong> — Conceito mais amplo: uma interface para acesso
+                        programático a funcionalidades ou dados.</p>
+                    <br>
+                    <br>
+                    <p class="skills-text"><strong>Web API</strong> — API disponibilizada por tecnologias da Web,
+                        normalmente utilizando HTTP.</p>
+                    <br>
+                    <br>
+                    <p class="skills-text"><strong>Web Service</strong> — Serviço de software destinado à comunicação
+                        entre sistemas por meio de tecnologias e protocolos de rede (como SOAP e REST).</p>
+                    <br>
+                    <br>
+                    <h3 class="skills-subtitle">2.3 Endpoints</h3>
+                    <p class="skills-text">
+                        <abbr title="Endpoint de API">Endpoint</abbr> é um ponto específico de acesso a uma API ou
+                        serviço. Em uma Web API, normalmente é identificado por uma URL ou URI e acessado por meio de
+                        uma requisição HTTP.
+                    </p>
+                    <ul>
+                        <li><code>GET /api/users</code> — Utilizado para consultar usuários.</li>
+                        <li><code>GET /api/tasks</code> — Utilizado para consultar tarefas.</li>
+                    </ul>
+
+                    <br>
+                    <h3 class="skills-subtitle">2.4 Requisição, Resposta e Métodos HTTP</h3>
+                    <p class="skills-text">
+                        Em uma integração típica, o cliente envia uma requisição e recebe uma resposta contendo código
+                        de status, cabeçalhos e dados.
+                    </p>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>GET (Consulta de Recursos)</p>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>POST (Criação de Recursos)</p>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+
+                    </div>
+
+                    <br>
+                    <h3 class="skills-subtitle">2.5 Formatos de Dados</h3>
+                    <p class="skills-text">
+                        <strong>JSON:</strong> Um dos formatos mais comuns em Web APIs por representar dados
+                        estruturados de forma simples e de fácil processamento.<br>
+                        <strong>XML:</strong> Utilizado especialmente em tecnologias e integrações baseadas em SOAP e em
+                        sistemas corporativos legados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="formation section" id="tipos">
+            <h2 class="section-title">3. Tipos e Formas de Classificação</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Classificação quanto ao Acesso</u></h3>
+                <ol>
+                    <li><strong>APIs Públicas:</strong> Disponibilizadas para consumidores externos mediante
+                        documentação e autenticação.</li>
+                    <li><strong>APIs Privadas:</strong> Utilizadas internamente por uma organização para comunicação
+                        entre sistemas.</li>
+                    <li><strong>APIs de Parceiros:</strong> Disponibilizadas a parceiros específicos para integrações
+                        controladas.</li>
+                </ol>
+                <br><br>
+
+                <h3><u>Estilos Arquiteturais e Protocolos</u></h3>
+                <p>
+                    <strong>REST (Representational State Transfer):</strong> Estilo arquitetural definido por Roy
+                    Fielding em 2000. Destaca-se pela separação cliente-servidor, ausência de estado
+                    (<em>stateless</em>), uso de URIs para recursos e reutilização dos métodos HTTP.<br><br>
+                    <strong>SOAP (Simple Object Access Protocol):</strong> Protocolo de comunicação estruturada baseado
+                    em XML, amplamente utilizado em ambientes corporativos que exigem rígida padronização e contratos
+                    formais.<br><br>
+                    <strong>GraphQL:</strong> Linguagem de consulta para APIs criada para permitir que o cliente
+                    especifique exatamente os campos que precisa, evitando busca excessiva de dados
+                    (<em>over-fetching</em>).<br><br>
+                    <strong>gRPC:</strong> Framework RPC de alto desempenho que utiliza Protocol Buffers, ideal para
+                    comunicação de baixa latência em microsserviços.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="about section" id="arquiteturas">
+            <h2 class="section-title">4. Integrações e Arquiteturas</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <h3 class="about-subtitle">Aplicações Monolíticas vs Microserviços</h3>
+                    <p class="about-text">
+                        A existência de uma API não significa obrigatoriamente que a aplicação seja composta por
+                        microserviços. Um sistema monolítico pode expor uma API REST para se comunicar com um front-end
+                        moderno. Por outro lado, em uma arquitetura de microserviços, cada domínio de negócio (ex:
+                        Usuários, Pedidos, Pagamentos) possui sua própria API independente.
+                    </p>
+                    <br>
+                    <h3 class="about-subtitle">Front-End e Serviços de Terceiros</h3>
+                    <p class="about-text">
+                        Em Single Page Applications (SPAs), o front-end consome APIs para carregar dados dinamicamente.
+                        Além disso, APIs de terceiros permitem incorporar facilmente serviços como gateways de
+                        pagamento, mapas, autenticação e inteligência artificial.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects section" id="ferramentas">
+            <h2 class="section-title">5. Ferramentas e Ecossistema</h2>
+            <div class="projects-text">
+                <h3>Tabela de Ferramentas e Especificações</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Ferramenta / Padrão</th>
+                            <th>Categoria</th>
+                            <th>Descrição / Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OpenAPI (v3.2.0)</td>
+                            <td>Especificação</td>
+                            <td>Padronização de contratos de APIs HTTP para geração de documentação e código.</td>
+                        </tr>
+                        <tr>
+                            <td>Postman</td>
+                            <td>Plataforma de Testes</td>
+                            <td>Envio de requisições, testes de integração, automação e validação de contratos.</td>
+                        </tr>
+                        <tr>
+                            <td>Swagger UI</td>
+                            <td>Documentação</td>
+                            <td>Interface gráfica para visualização e interação com especificações OpenAPI.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section class="skills section" id="seguranca">
+            <h2 class="section-title">6. Segurança de APIs</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h3 class="skills-subtitle">OWASP API Security Top 10 (2023)</h3>
+                    <p class="skills-text">
+                        Como APIs expõem dados diretamente, a segurança deve ser planejada desde o projeto. A
+                        vulnerabilidade mais crítica apontada pela OWASP é o <strong>Broken Object Level Authorization
+                            (BOLA)</strong>, onde um usuário autenticado consegue acessar dados de outro usuário
+                        alterando o ID no endpoint.
+                    </p>
+                    <br>
+                    <h3>Principais Boas Práticas de Segurança</h3>
+                    <dl>
+                        <dt><em>Autenticação e Autorização</em></dt>
+                        <dd>Uso de tokens seguros (ex: JWT/OAuth2) e verificação de permissões em nível de objeto.</dd>
+                        <dt><em>Validação de Entradas & Rate Limiting</em></dt>
+                        <dd>Sanitização de dados e limitação de taxa para prevenir ataques de força bruta e DoS.</dd>
+                        <dt><em>Criptografia</em></dt>
+                        <dd>Uso obrigatório de HTTPS para proteger os dados em trânsito.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects section" id="exemplos">
+            <h2 class="section-title">7. Exemplos Práticos e Boas Práticas</h2>
+
+            <div class="about-container bd-grid">
+                <div>
+                    <h3 class="about-subtitle">Desafios na Evolução de APIs</h3>
+                    <p class="about-text">
+                        Projetar uma API exige manter <strong>compatibilidade retroativa</strong>, versionamento
+                        adequado (ex: <code>/v1/</code>, <code>/v2/</code>) e comunicação clara entre equipes para
+                        evitar falhas em sistemas consumidores.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact section" id="referencias">
+            <h2 class="section-title">8. Referências Bibliográficas</h2>
+            <div class="contact-container bd-grid">
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                    <li>AMAZON WEB SERVICES. <strong>O que é o Amazon API Gateway?</strong> Disponível em:
+                        &lt;https://docs.aws.amazon.com/pt_br/apigateway/latest/developerguide/welcome.html&gt;. Acesso
+                        em: 12 ago. 2026.</li>
+                    <br>
+                    <li>AMAZON WEB SERVICES. <strong>O que é uma API RESTful?</strong> Disponível em:
+                        &lt;https://aws.amazon.com/pt/what-is/restful-api/&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>ENGDB. <strong>Tipos de API</strong>. Disponível em:
+                        &lt;https://blog.engdb.com.br/tipos-de-api/&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>FIELDING, Roy Thomas. <strong>Architectural Styles and the Design of Network-based Software
+                            Architectures</strong>. University of California, Irvine, 2000.</li>
+                    <br>
+                    <li>gRPC. <strong>Introduction to gRPC</strong>. Disponível em:
+                        &lt;https://grpc.io/docs/what-is-grpc/introduction/&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>IBM. <strong>O que é uma API (interface de programação de aplicativos)?</strong> Disponível em:
+                        &lt;https://www.ibm.com/br-pt/think/topics/api&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>IBM. <strong>O que é integração com API?</strong> Disponível em:
+                        &lt;https://www.ibm.com/br-pt/think/topics/api-integration&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>IBM. <strong>O que é segurança de API?</strong> Disponível em:
+                        &lt;https://www.ibm.com/br-pt/think/topics/api-security&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>OWASP FOUNDATION. <strong>OWASP Top 10 API Security Risks – 2023</strong>. 2023. Disponível em:
+                        &lt;https://owasp.org/API-Security/editions/2023/en/0x11-t10/&gt;. Acesso em: 12 ago. 2026.</li>
+                    <br>
+                    <li>POSTMAN. <strong>Postman Documentation</strong>. Disponível em:
+                        &lt;https://learning.postman.com/docs/introduction/overview/&gt;. Acesso em: 12 ago. 2026.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">Atividade 3 — Desenvolvimento Web (DWEB) | FATEC Sorocaba</p>
+        <p>&copy; 2026 Victor Favarin. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
