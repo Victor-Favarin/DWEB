@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Favarin" />
+  <meta name="description" content="Portal de notícias criado como atividade da disciplina de Desenvolvimento Web" />
+  <meta name="keywords" content="notícias, portal, jornal, DWEB, atividade4" />
+  <title>Portal Meridiano - Notícias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <h1>Portal Meridiano</h1>
+
+    <nav class="menu" id="menu-principal">
+      <a href="#" class="ativo">Início</a>
+      <a href="#destaque">Destaque</a>
+      <a href="#ultimas">Notícias</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <article class="destaque" id="destaque">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80"
+          alt="Painel solar em campo aberto ao entardecer" title="Usina de energia solar" />
+        <figcaption>Usina solar em operação — foco da matéria de hoje</figcaption>
+      </figure>
+
+      <div class="destaque-texto">
+        <span class="categoria">Economia</span>
+        <h2>Investimento em energia limpa bate recorde no país</h2>
+        <p>Novas usinas solares e eólicas devem gerar milhares de empregos diretos até 2028,
+          segundo levantamento do setor. Especialistas alertam, porém, para gargalos na rede
+          de transmissão que podem atrasar a entrega da energia gerada.</p>
+        <p><em>Por Marina Kowalski — 15/09/2026</em></p>
+        <a href="#noticia-energia" class="botao-leia-mais">Leia a matéria completa →</a>
+      </div>
+    </article>
+
+
+    <section class="secao-noticias" id="ultimas">
+      <h2 class="titulo-secao">Últimas notícias</h2>
+
+      <div class="grid-noticias">
+
+        <article class="card">
+          <a href="#noticia-reforma" class="card-link">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=500&q=80"
+                alt="Sessão em um plenário de congresso" />
+            </figure>
+            <span class="categoria">Política</span>
+            <h3>Reforma tributária entra em fase decisiva no Congresso</h3>
+            <p>Relatores negociam ajustes no texto para garantir apoio da bancada regional.</p>
+            <span class="botao-leia-mais">Leia mais →</span>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="#noticia-clima" class="card-link">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80"
+                alt="Vista da Terra a partir do espaço" />
+            </figure>
+            <span class="categoria">Mundo</span>
+            <h3>Cúpula do clima termina sem acordo sobre metas de emissão</h3>
+            <p>Países divergem sobre prazos para redução de gases poluentes até 2035.</p>
+            <span class="botao-leia-mais">Leia mais →</span>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="#noticia-chip" class="card-link">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80"
+                alt="Placa de circuito eletrônico" />
+            </figure>
+            <span class="categoria">Tecnologia</span>
+            <h3>Startup nacional lança chip de baixo consumo</h3>
+            <p>Componente é voltado para sensores usados em equipamentos agrícolas.</p>
+            <span class="botao-leia-mais">Leia mais →</span>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="#noticia-selecao" class="card-link">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=500&q=80"
+                alt="Time de futebol comemorando gol" />
+            </figure>
+            <span class="categoria">Esportes</span>
+            <h3>Seleção convoca três estreantes para as eliminatórias</h3>
+            <p>Técnico aposta em jogadores jovens para os próximos jogos de outubro.</p>
+            <span class="botao-leia-mais">Leia mais →</span>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <section class="leitura-completa" id="leitura-completa">
+    <h2 class="titulo-secao">Leitura completa</h2>
+
+    <article class="artigo-completo" id="noticia-energia">
+      <span class="categoria">Economia</span>
+      <h3>Investimento em energia limpa bate recorde no país</h3>
+      <p>Novas usinas solares e eólicas devem gerar milhares de empregos diretos até 2028, segundo
+        levantamento do setor. O crescimento é puxado por leilões de energia realizados nos últimos
+        dois anos e por incentivos fiscais destinados a projetos de geração distribuída.</p>
+      <p>Apesar do avanço, especialistas alertam para gargalos na rede de transmissão, que pode não
+        acompanhar o ritmo de instalação de novas usinas em algumas regiões, atrasando a entrega da
+        energia gerada aos consumidores finais.</p>
+      <p><em>Por Marina Kowalski — 15/09/2026</em></p>
+      <a href="#destaque" class="voltar">← Voltar para o destaque</a>
+    </article>
+
+    <article class="artigo-completo" id="noticia-reforma">
+      <span class="categoria">Política</span>
+      <h3>Reforma tributária entra em fase decisiva no Congresso</h3>
+      <p>Relatores negociam até a última hora ajustes no texto para garantir apoio da bancada
+        regional, principal ponto de resistência à proposta. A votação em plenário está marcada
+        para esta semana.</p>
+      <p>Entre os pontos mais discutidos estão a distribuição de recursos entre estados e a criação
+        de um fundo de compensação para setores que devem ser mais impactados pela mudança nas
+        regras de tributação.</p>
+      <p><em>Por Diego Almeida — 15/09/2026</em></p>
+      <a href="#ultimas" class="voltar">← Voltar para últimas notícias</a>
+    </article>
+
+    <article class="artigo-completo" id="noticia-clima">
+      <span class="categoria">Mundo</span>
+      <h3>Cúpula do clima termina sem acordo sobre metas de emissão</h3>
+      <p>Representantes de mais de 190 países encerraram a cúpula sem chegar a um consenso sobre
+        metas de redução de emissão de gases de efeito estufa até 2035, principal ponto de
+        divergência entre nações desenvolvidas e em desenvolvimento.</p>
+      <p>As negociações devem continuar em uma nova rodada de conversas prevista para o início do
+        próximo ano, segundo organizadores do evento.</p>
+      <p><em>Por Helena Cruz — 15/09/2026</em></p>
+      <a href="#ultimas" class="voltar">← Voltar para últimas notícias</a>
+    </article>
+
+    <article class="artigo-completo" id="noticia-chip">
+      <span class="categoria">Tecnologia</span>
+      <h3>Startup nacional lança chip de baixo consumo</h3>
+      <p>O componente foi desenvolvido para equipar sensores usados em equipamentos agrícolas,
+        prometendo reduzir em até 40% o consumo de energia em comparação a soluções similares
+        disponíveis no mercado.</p>
+      <p>A empresa afirma que o chip já está em fase de testes com produtores rurais parceiros e
+        deve chegar ao mercado no início do próximo ano.</p>
+      <p><em>Por Rafael Teixeira — 15/09/2026</em></p>
+      <a href="#ultimas" class="voltar">← Voltar para últimas notícias</a>
+    </article>
+
+    <article class="artigo-completo" id="noticia-selecao">
+      <span class="categoria">Esportes</span>
+      <h3>Seleção convoca três estreantes para as eliminatórias</h3>
+      <p>O técnico aposta em jogadores jovens para os próximos jogos de outubro, em uma tentativa
+        de renovar o elenco de olho nas próximas competições internacionais.</p>
+      <p>Os três estreantes já vinham se destacando em seus clubes nas últimas rodadas dos
+        respectivos campeonatos nacionais.</p>
+      <p><em>Por Otávio Lima — 15/09/2026</em></p>
+      <a href="#ultimas" class="voltar">← Voltar para últimas notícias</a>
+    </article>
+  </section>
+
+  <footer class="rodape" id="contato">
+    <div class="rodape-coluna">
+      <h4>Portal Meridiano</h4>
+      <p>Site desenvolvido para a Atividade 4 da disciplina de Desenvolvimento Web.</p>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Editorias</h4>
+      <a href="#">Política</a>
+      <a href="#">Economia</a>
+      <a href="#">Mundo</a>
+    </div>
+
+    <div class="rodape-coluna">
+      <h4>Contato</h4>
+      <a href="mailto:contato@meridiano.com">Enviar e-mail</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
