@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+/* DIV simples 500x500 */
+.caixa {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: #7f7f7f; /* cor padrão */
+}
+
+.caixa h2 {
+  font-size: 2.5rem;
+}
+
+/* Por padrão, nenhum nome aparece; cada media query mostra o seu */
+.cor {
+  display: none;
+}
+
+/* Até 420px: cinza */
+@media (max-width: 420px) {
+  .caixa { background: #7f7f7f; }
+  .cinza { display: inline; }
+}
+
+/* Maior que 420px até 768px: laranja */
+@media (min-width: 421px) and (max-width: 768px) {
+  .caixa { background: #e08e3c; }
+  .laranja { display: inline; }
+}
+
+/* Maior que 768px até 1024px: magenta */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .caixa { background: #e83be8; }
+  .magenta { display: inline; }
+}
+
+/* Maior que 1024px até 1080px: vermelho */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .caixa { background: #de0719; }
+  .vermelho { display: inline; }
+}
+
+/* Maior que 1080px até 1366px: roxo */
+@media (min-width: 1081px) and (max-width: 1366px) {
+  .caixa { background: #5b4fa3; }
+  .roxo { display: inline; }
+}
+
+/* Maior que 1366px até 1920px: amarelo */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .caixa { background: #e8c23c; color: #333; }
+  .amarelo { display: inline; }
+}
+
+/* Maior que 1920px: verde */
+@media (min-width: 1921px) {
+  .caixa { background: #4caf50; }
+  .verde { display: inline; }
+}
+
+/* Telas menores que a caixa: evita rolagem horizontal */
+@media (max-width: 500px) {
+  .caixa {
+    width: 100%;
+    max-width: 500px;
+  }
+}
