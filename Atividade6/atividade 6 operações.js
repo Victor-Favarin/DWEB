@@ -1,4 +1,4 @@
-// Recebe dois números e mostra soma, subtração, produto, divisão e resto
+
 function operar() {
   const n1 = parseFloat(prompt("Digite o primeiro número:"));
   const n2 = parseFloat(prompt("Digite o segundo número:"));
