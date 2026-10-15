@@ -1,4 +1,4 @@
-// Lê o nome e as quatro notas, calcula e mostra a média aritmética
+
 function calcularMedia() {
   const nome = prompt("Digite o nome do aluno:");
   if (nome === null || nome.trim() === "") {
