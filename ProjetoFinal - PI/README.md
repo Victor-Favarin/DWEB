@@ -2,7 +2,7 @@
 
 Projeto Final de Desenvolvimento Web (2ª parte).
 
-**Site publicado:** [colar aqui o link do GitHub Pages]
+**Site publicado:** https://victor-favarin.github.io/DWEB/ProjetoFinal%20-%20PI/html/index.html
 **Login de teste:** usuário `admin` / senha `1234`
 
 ## Integrantes
@@ -14,7 +14,7 @@ Projeto Final de Desenvolvimento Web (2ª parte).
 | 0030482611027 | Victor Favarin | victor.conceicao2@aluno.cps.sp.gov.br |
 | 0030482611035 | Rafael Lima Dorsa | rafael.dorsa@aluno.cps.sp.gov.br |
 
-Curso / turma: [preencher] · Professor(a): [preencher]
+
 
 ## Contexto
 
@@ -62,6 +62,3 @@ Para rodar localmente, abra `html/index.html` no navegador.
 - Entradas e saídas de estoque com histórico
 - Autenticação real e banco de dados central (junto com o PI)
 
-## Uso de inteligência artificial
-
-A IA foi usada como assistente de apoio. O grupo revisou o código e é responsável por compreendê-lo e explicá-lo. [Ajustem conforme o que o grupo realmente fez.]
