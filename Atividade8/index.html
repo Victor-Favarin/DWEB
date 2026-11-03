@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesquisa de opinião – Filme</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Pesquisa de lançamento do filme</h1>
+    <p id="contador">Respostas registradas: 0 de 5</p>
+
+    <section class="entrada">
+      <label>Idade
+        <input type="number" id="idade" min="0" max="120" step="1">
+      </label>
+
+      <label>Sexo
+        <select id="sexo">
+          <option value="">Selecione</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outros">Outros</option>
+        </select>
+      </label>
+
+      <label>Opinião
+        <select id="opiniao">
+          <option value="">Selecione</option>
+          <option value="4">Ótimo (4)</option>
+          <option value="3">Bom (3)</option>
+          <option value="2">Regular (2)</option>
+          <option value="1">Péssimo (1)</option>
+        </select>
+      </label>
+
+      <button type="button" id="btnAdicionar">Adicionar resposta</button>
+      <button type="button" id="btnTeste" class="secundario">Gerar respostas de teste</button>
+    </section>
+
+    <p id="mensagem" role="alert"></p>
+
+    <section id="resultados">
+      <h2>Resultados</h2>
+      <dl>
+        <dt>Média de idade</dt><dd id="resMedia">–</dd>
+        <dt>Pessoa mais velha</dt><dd id="resMaisVelha">–</dd>
+        <dt>Pessoa mais nova</dt><dd id="resMaisNova">–</dd>
+        <dt>Responderam péssimo</dt><dd id="resPessimo">–</dd>
+        <dt>Responderam ótimo ou bom</dt><dd id="resOtimoBom">–</dd>
+        <dt>Mulheres</dt><dd id="resFem">–</dd>
+        <dt>Homens</dt><dd id="resMasc">–</dd>
+        <dt>Outros</dt><dd id="resOutros">–</dd>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>
