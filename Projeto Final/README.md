@@ -2,6 +2,8 @@
 
 Sistema de Controle de Estoque — Projeto Final de Desenvolvimento Web (2ª parte)
 
+ACESSO: https://victor-favarin.github.io/DWEB/Projeto%20Final/html/index.html
+
 ## 1. Integrantes do grupo
 
 | RA | Nome | E-mail |
