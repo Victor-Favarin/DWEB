@@ -17,7 +17,13 @@ ACESSO: https://victor-favarin.github.io/DWEB/Projeto%20Final/html/index.html
 
 O Mercadinho Silva Camargo é um comércio de bairro que hoje controla seus produtos em cadernos, planilhas e mensagens de WhatsApp. Essa dispersão dificulta saber quanto existe de cada produto. Este projeto é a parte de desenvolvimento web de um sistema de controle de estoque, que faz parte do Projeto Integrador (PI) do grupo.
 
-Seguindo a orientação do professor de PI, o projeto foi dividido em etapas. Nesta entrega o grupo desenvolveu o login, o painel principal (dashboard) e as telas de produtos, fornecedores, estoque e relatórios. Fiados, parte financeira e outras áreas ficam para etapas futuras.
+Seguindo a orientação do professor de PI, o projeto foi dividido em etapas. Nesta entrega foi feito o login, o painel principal (dashboard) e as telas de produtos, fornecedores, estoque e relatórios. Fiados, parte financeira e outras áreas ficam para etapas futuras.
+
+
+!!!OBSERVAÇÃO!!!
+
+Fomos orientados a desenvolver etapa por etapa, mas algumas funções do projeto dependem de outras. Exemplo: Produtos depende do cadastro de fornecedores. Por conta disso, foram desenvolvidas mais partes do que o combinado inicial.
+
 
 ## 3. O que foi desenvolvido
 
