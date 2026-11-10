@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atividade 9 - Funções em JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Atividade 9</h1>
+    <p>Funções em JavaScript</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2><span class="num">1</span> Maior de três números</h2>
+      <div class="campos">
+        <input type="number" id="n1a" placeholder="Número 1">
+        <input type="number" id="n1b" placeholder="Número 2">
+        <input type="number" id="n1c" placeholder="Número 3">
+      </div>
+      <button onclick="executarMaior()">Descobrir o maior</button>
+      <p class="resultado" id="res1"></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">2</span> Ordem crescente</h2>
+      <div class="campos">
+        <input type="number" id="n2a" placeholder="Número 1">
+        <input type="number" id="n2b" placeholder="Número 2">
+        <input type="number" id="n2c" placeholder="Número 3">
+      </div>
+      <button onclick="executarOrdem()">Ordenar</button>
+      <p class="resultado" id="res2"></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">3</span> Palíndromo</h2>
+      <div class="campos">
+        <input type="text" id="n3" placeholder="Digite uma palavra ou frase">
+      </div>
+      <button onclick="executarPalindromo()">Verificar</button>
+      <p class="resultado" id="res3"></p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">4</span> Subconjunto de palavra</h2>
+      <div class="campos">
+        <input type="text" id="n4a" placeholder="Primeira palavra (ex: programação)">
+        <input type="text" id="n4b" placeholder="Segunda palavra (ex: programa)">
+      </div>
+      <button onclick="executarSubconjunto()">Verificar</button>
+      <p class="resultado" id="res4"></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">5</span> Dia da semana</h2>
+      <div class="campos">
+        <input type="date" id="n5">
+      </div>
+      <button onclick="executarDiaSemana()">Descobrir o dia</button>
+      <p class="resultado" id="res5"></p>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+:root {
+  --bg: #f3f4fb;
+  --card: #ffffff;
+  --texto: #1f2340;
+  --suave: #6b7094;
+  --primaria: #5b5bd6;
+  --primaria-escura: #4646b8;
+  --ok-bg: #e7f7ee;
+  --ok: #1d7a46;
+  --erro-bg: #fdecec;
+  --erro: #b3261e;
+  --borda: #dcdff2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+}
+
+header {
+  text-align: center;
+  padding: 36px 16px 20px;
+  background: linear-gradient(135deg, #5b5bd6, #8a63e8);
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 6px 0 0;
+  opacity: .9;
+}
+
+main {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 0 16px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, .08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.num {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primaria);
+  color: #fff;
+  font-size: .9rem;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+input:focus {
+  border-color: var(--primaria);
+  box-shadow: 0 0 0 3px rgba(91, 91, 214, .18);
+}
+
+button {
+  padding: 11px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primaria);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s, transform .05s;
+}
+
+button:hover {
+  background: var(--primaria-escura);
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+.resultado {
+  margin: 0;
+  min-height: 24px;
+  padding: 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.resultado.ok {
+  padding: 10px 12px;
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+
+.resultado.erro {
+  padding: 10px 12px;
+  background: var(--erro-bg);
+  color: var(--erro);
+}
